@@ -79,5 +79,7 @@ foreach ($site in $sites) {
     if ($odourl) {
         #execution was not skipped, new folder to map, execute the odopen url!
         Start-Process $odourl
+
+        start-sleep -Seconds 10
     }
 }
